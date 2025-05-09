@@ -1,0 +1,11 @@
+
+# Initialize f and n
+f = 1
+n = 0
+# Iterate 20 times
+for _ in range(20):
+ # Output n, "! = ", f
+ print(f"{n}! = {f}")
+ # Increment n and update f
+ n += 1
+ f *= n 
