@@ -1,0 +1,14 @@
+# a) Create a list
+my_list = [1, 2, 3, 4, 5]
+# b) Access list (accessing the first item)
+print("First item in the list:", my_list[0])
+# c) Update list:
+# - Add item to the list
+my_list.append(6)
+print("List after adding an item:", my_list)
+# - Remove item from the list
+my_list.remove(3)
+print("List after removing an item:", my_list)
+# d) Delete the list
+del my_list
+print("List deleted successfully.") 
