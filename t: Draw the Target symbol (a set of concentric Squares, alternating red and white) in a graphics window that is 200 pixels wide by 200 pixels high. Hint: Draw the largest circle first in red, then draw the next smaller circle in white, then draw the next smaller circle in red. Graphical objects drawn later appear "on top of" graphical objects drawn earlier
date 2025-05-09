@@ -1,0 +1,25 @@
+import turtle
+# Set up the screen
+screen = turtle.Screen()
+screen.setup(200, 200)
+screen.title("Target Symbol")
+# Set up the turtle
+t = turtle.Turtle()
+t.speed(0) # Fastest drawing speed
+t.penup()
+# Define the size and colors
+size = 100 # Half the width of the window (largest square side)
+colors = ["red", "white"] # Alternating colors
+# Draw concentric squares
+for i in range(5): # Number of squares (alternating red and white)
+ t.goto(-size / 2, -size / 2) # Move to top-left of square
+ t.fillcolor(colors[i % 2])
+ t.begin_fill()
+ for _ in range(4): # Draw a square
+ t.forward(size)
+ t.left(90)
+ t.end_fill()
+ size -= 20 # Reduce square size for next layer
+# Hide the turtle and display the window
+t.hideturtle()
+screen.mainloop()
